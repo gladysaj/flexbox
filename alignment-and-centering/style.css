@@ -200,7 +200,7 @@ input::-moz-focus-inner {
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display: flex;
-  /* justify-content: 
+  /* justify-content: MAIN AXIS
 flex-start; (default) 
 flex-end;(move items to the end) 
 center; (things to center) 
@@ -213,6 +213,17 @@ space-around; (divide all the spaces including the first one from the flex-start
   border: 10px solid mistyrose;
   height: 100vh;
   align-items: flex-start;
+
+  /* align-items: center (sometimes it doesn't work you need to add a height to the container 
+  align-items: stretch; (make the items from top to bottom) 
+  align-items: flex-start, flex-end
+  align-items: baseline (when you have different font sizes for example it align all the text to the same line) */
+  /* flex-direction: column (to align all boxes top to bottom)
+
+  /* align-content: CROSS AXIS ; space-between (just works with the cross axis, top to bottom) (the default is stretch;
+  align-content: flex-start; will move all the squares to top 
+
+  /* align-self: select the item to move with its class (use baseline, stretch, flex-end 
 }
 
 .box {
